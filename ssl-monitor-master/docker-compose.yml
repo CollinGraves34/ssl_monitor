@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+  ssl-monitor:
+    container_name: 'ssl-monitor'
+    image: ssl-monitor:latest
+    volumes:
+      - ./:/usr/local/etc/ssl-monitor
+      - /mnt/blockstorage/docker-volumes/haproxy-config/core/nginx/certs:/etc/letsencrypt
+      - /mnt/blockstorage/docker-volumes/default-backend/core/nginx/html:/data/letsencrypt
+      - /mnt/blockstorage/docker-volumes/haproxy-config/certs:/etc/certs
+    networks:
+      - bluhorse-network
+
+networks:
+  bluhorse-network:
+    external:
+      name: bluhorse-network

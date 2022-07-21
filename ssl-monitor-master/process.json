@@ -1,0 +1,8 @@
+{
+  "apps" : [{
+    "name"        : "bluhorse-ssl-monitor",
+    "script"      : "/mnt/blockstorage/docker-volumes/ssl-monitor/app.js",
+    "watch"       : false,
+    "instance_var": "INSTANCE_ID"
+  }]
+}

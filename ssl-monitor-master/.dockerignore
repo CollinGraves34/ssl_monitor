@@ -1,0 +1,8 @@
+~
+.vscode
+node_modules
+package-lock.json
+.git
+README.md
+docker-compose.yml
+Dockerfile

@@ -1,0 +1,33 @@
+{
+  "name": "bluhorse-ssl-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build -t ssl-monitor ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.anomalistdesign.com:bluhorse/bluhorse-ssl-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "combine-files": "^1.1.8",
+    "fs-extra": "^7.0.1",
+    "inquirer": "^6.2.2",
+    "node-dir": "^0.1.17",
+    "replace": "^1.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "deferred": "^0.7.11",
+    "ejs": "^3.0.1",
+    "email-templates": "^7.0.4",
+    "insert-line": "^1.1.0",
+    "node-cmd": "^3.0.0",
+    "node-schedule": "^1.3.2",
+    "nodemailer": "^6.4.2",
+    "request": "^2.88.2"
+  }
+}
